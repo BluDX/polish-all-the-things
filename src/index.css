@@ -1,4 +1,32 @@
 @import "tailwindcss";
 @import "flowbite/src/themes/default.css";
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Outline&family=Nunito:wght@400;700&display=swap');
+
 @plugin "flowbite/plugin";
 @source "../node_modules/flowbite";
+
+@theme {
+    /* Font Sizes */
+    --font-size-sm: 0.800rem;
+    --font-size-base: 1rem;
+    --font-size-xl: 1.250rem;
+    --font-size-2xl: 1.563rem;
+    --font-size-3xl: 1.954rem;
+    --font-size-4xl: 2.442rem;
+    --font-size-5xl: 3.053rem;
+
+    /* Font Families */
+    --font-heading: "Bungee Outline", ui-sans-serif, system-ui, sans-serif;
+    --font-body: "Nunito", ui-sans-serif, system-ui, sans-serif;
+
+    /* Font Weights */
+    --font-weight-normal: 400;
+    --font-weight-bold: 700;
+
+    /* Colors */
+    --color-text: #050315;
+    --color-background: #999999;
+    --color-primary: #756fa6;
+    --color-secondary: #c383e3;
+    --color-accent: #b281b1;
+}
