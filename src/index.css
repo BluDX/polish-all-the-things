@@ -1,9 +1,23 @@
 @import "tailwindcss";
 @import "flowbite/src/themes/default.css";
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Outline&family=Nunito:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Merienda:700|Nunito:400');
 
 @plugin "flowbite/plugin";
 @source "../node_modules/flowbite";
+
+
+
+
+
+body {
+    font-family: 'Nunito';
+    font-weight: 400;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Merienda';
+    font-weight: 700;
+}
 
 @theme {
     /* Font Sizes */
@@ -16,7 +30,7 @@
     --font-size-5xl: 3.053rem;
 
     /* Font Families */
-    --font-heading: "Bungee Outline", ui-sans-serif, system-ui, sans-serif;
+    --font-heading: "Merienda", ui-sans-serif, system-ui, sans-serif;
     --font-body: "Nunito", ui-sans-serif, system-ui, sans-serif;
 
     /* Font Weights */
@@ -25,8 +39,8 @@
 
     /* Colors */
     --color-text: #050315;
-    --color-background: #999999;
-    --color-primary: #756fa6;
-    --color-secondary: #c383e3;
-    --color-accent: #b281b1;
+    --color-background: #FFFFFF;
+    --color-primary: #7ea1cd;
+    --color-secondary: #000152;
+    --color-accent: #c383e3;
 }
