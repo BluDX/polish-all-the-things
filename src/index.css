@@ -5,10 +5,6 @@
 @plugin "flowbite/plugin";
 @source "../node_modules/flowbite";
 
-
-
-
-
 body {
     font-family: 'Nunito';
     font-weight: 400;
