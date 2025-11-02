@@ -36,7 +36,7 @@ h1, h2, h3, h4, h5 {
     /* Colors */
     --color-text: #050315;
     --color-background: #FFFFFF;
-    --color-primary: #7da5d1;
-    --color-secondary: #000152;
-    --color-accent: #c383e3;
+    --color-primary: #666666;
+    --color-secondary: #666666;
+    --color-accent: #666666;
 }

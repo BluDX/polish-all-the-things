@@ -96,12 +96,10 @@
 <!-- Logo -->
 <img class="h-auto w-full" src="/logo.png" alt="Polish ALL the Things! Logo">
 
-<div class="bg-gradient-to-b from-fuchsia-500 via-yellow-500 via-green-500 to-blue-500">
-
 <!-- Shop Sections & Portfolio -->
 <div id="shop">
 
-    <div id="pressons" class="w-screen text-white p-8">
+    <div id="pressons" class="w-screen bg-blue-500 text-white p-8">
         <div class="max-w-screen-xl mx-auto">
             <h2 class="text-4xl font-bold font-heading mb-6 text-center">Press-On Nails</h2>
 
@@ -121,7 +119,7 @@
         </div>
     </div>
 
-    <div id="kit" class="w-screen text-white p-8">
+    <div id="kit" class="w-screen bg-blue-500 text-white p-8">
         <div class="max-w-screen-xl mx-auto">
             <h2 class="text-4xl font-bold font-heading mb-6 text-center">Press-On Sizing Kit</h2>
 
@@ -141,7 +139,7 @@
         </div>
     </div>
 
-    <div id="vinyls" class="w-screen text-white p-8">
+    <div id="vinyls" class="w-screen bg-blue-500 text-white p-8">
         <div class="max-w-screen-xl mx-auto">
             <h2 class="text-4xl font-bold font-heading mb-6 text-center">Nail Art Vinyls</h2>
 
@@ -161,7 +159,7 @@
         </div>
     </div>
 
-    <div id="decals" class="w-screen text-white p-8">
+    <div id="decals" class="w-screen bg-blue-500 text-white p-8">
         <div class="max-w-screen-xl mx-auto">
             <h2 class="text-4xl font-bold font-heading mb-6 text-center">Waterslide Decals</h2>
 
@@ -181,7 +179,7 @@
         </div>
     </div>
 
-    <div id="jewelry" class="w-screen text-white p-8">
+    <div id="jewelry" class="w-screen bg-blue-500 text-white p-8">
         <div class="max-w-screen-xl mx-auto">
             <h2 class="text-4xl font-bold font-heading mb-6 text-center">Jewelry Made with Nail Polish</h2>
 
@@ -202,7 +200,7 @@
     </div>
 </div>
 
-<!--<div class="bg-radial from-blue-500 to-purple-600">-->
+<div class="bg-radial from-blue-500 to-purple-600">
     <section id="contact">
         <div class="py-8 lg:py-4 px-4 mx-auto max-w-screen-xl">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -276,7 +274,3 @@
         </div>
     </footer>
 </div>
-
-<script type="module" src="/src/main.js"></script>
-</body>
-</html>
