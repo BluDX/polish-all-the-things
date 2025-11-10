@@ -38,7 +38,7 @@
     - better way: ssh in as a different user, then use sudo to run commands as root
     - means that if attacker gets our key, they don't have full access unless they ALSO get our password
 - ssh into the server
-    - For Mac and Linux: `ssh root@iliketocopyandpasteblindly.me`
+    - For Mac and Linux: `ssh root@polishallthethings.com`
     - For Windows: Set up a new PuTTY session
         - **Session**
             - Hostname: droplet ipv4 address
@@ -52,20 +52,20 @@
             - Click pwp
             - Click Save
 - create user
-    - `useradd -m -s /bin/bash -g users -G sudo your-username`
-    - replace your-username with your own
+    - `useradd -m -s /bin/bash -g users -G sudo BluDX`
+    - replace BluDX with your own
 - create password
-    - `passwd your-username`
+    - `passwd BluDX`
 - Move .ssh key file
-    - `cp -r .ssh /home/your-username`
+    - `cp -r .ssh /home/BluDX`
 - change ownership of the .ssh directory
-    - `cd /home/your-username`
-    - `chown -R your-username:users .ssh/`
+    - `cd /home/BluDX`
+    - `chown -R BluDX:users .ssh/`
 
 
 - Test Changes
     - `exit`
-    - Mac/Linux: `ssh your-username@iliketocopyandpasteblindly.me`
+    - Mac/Linux: `ssh BluDX@polishallthethings.com`
     - Windows:
         - **Session**
             - Click pwp
@@ -86,8 +86,8 @@
     - You amy be asked to overwrite some files. Type `n` and press enter to accept the defaults.
 - reboot
     - `sudo reboot`
-- ssh back in
-- `ssh your-username@iliketocopyandpasteblindly.me`
+- ssh back in (for Mac)
+- `ssh BluDX@polishallthethings.com`
 ## Install nginx and configure firewall using UFW
 - install nginx
     - `sudo apt install nginx`
@@ -102,15 +102,15 @@
     - you can also check to see if nginx is running by visiting the ip address/domain in your browser.
 ## Add nginx block for your domain
 - create a directory for your deployment
-    - `sudo mkdir /var/www/iliketocopyandpasteblindly.me/html`
+    - `sudo mkdir -p /var/www/polishallthethings.com/html`
 - fix permissions
-    - `sudo chown -R $USER:users /var/www/iliketocopyandpasteblindly.me/html`
-    - create a deployment in Webstorm and upload it to the server
+    - `sudo chown -R $USER:users /var/www/polishallthethings.com/html`
+    - (skip this step! do it last.) create a deployment in Webstorm and upload it to the server
 
 
 ## create a new nginx block
 - Create a new nginx block for your domain in the sites-available directory
-- `sudo vim /etc/nginx/sites-available/iliketocopyandpasteblindly.me`
+- `sudo vim /etc/nginx/sites-available/polishallthethings.com`
 - add the following file
     - - replace your domain with your domain.com
 -
@@ -119,10 +119,10 @@ server {
     listen 80;
     listen [::]:80;
 
-    root /var/www/iliketocopyandpasteblindly.me/html;
+    root /var/www/polishallthethings.com/html;
     index index.html index.htm index.nginx-debian.html;
 
-    server_name iliketocopyandpasteblindly.me www.iliketocopyandpasteblindly.me;
+    server_name polishallthethings.com www.polishallthethings.com;
 
     location / {
             try_files $uri $uri/ =404;
@@ -131,7 +131,7 @@ server {
 ```
 
 - create a symlink to the sites-enabled directory
-    - `sudo ln -s /etc/nginx/sites-available/iliketocopyandpasteblindly.me /etc/nginx/sites-enabled/`
+    - `sudo ln -s /etc/nginx/sites-available/polishallthethings.com /etc/nginx/sites-enabled/`
     - Nginx uses symlinks to enable and disable sites in the sites-enabled directory.
     - This allows for developers to have multiple sites available, but only enable the ones you want to use.
 - increase the server names hash bucket size
@@ -163,16 +163,16 @@ server {
 - `sudo certbot renew --dry-run`
 ## Setup Deployment Pipeline using Github Actions
 - Create a new ssh key on your server in the .ssh directory
-  - `ssh-keygen -t ed25519 -C  "github Deploy Key" -f /home/your-username/.ssh/github_deploy_key`
+  - `ssh-keygen -t ed25519 -C  "github Deploy Key" -f /home/BluDX/.ssh/github_deploy_key`
   - Don't enter a passphrase
     - hit enter twice
 - Copy the public key into your authorized keys file
-  - `cat /home/your-username/.ssh/github_deploy_key.pub >> /home/your-username/.ssh/authorized_keys`
+  - `cat /home/BluDX/.ssh/github_deploy_key.pub >> /home/BluDX/.ssh/authorized_keys`
   - this command appends the public key to the authorized keys file using the cat command and the >> operator
   - `>>` appends the output of the left side of the command into the file on the right side of the command
 - Copy the private key to your clipboard **(this is a very dangerous operation do not share this key with anyone )**
   - If the key is leaked delete it immediately and create a new one.
-  - `cat /home/your-username/.ssh/github_deploy_key`
+  - `cat /home/BluDX/.ssh/github_deploy_key`
 - Add the private key to your repository as a github secret(Github Secrets are encrypted environment variables that you can use in your github actions)
   - Go to your repository on github
   - Click on settings
@@ -213,8 +213,8 @@ jobs:
 
       - name: Deploy to server
         run: |
-         ssh-keyscan -H iliketocopyandpasteblindly.me >> ~/.ssh/known_hosts 
-         scp -r ./dist/* gkephart@iliketocopyandpasteblindly.me:/var/www/iliketocopyandpasteblindly.me/html
+         ssh-keyscan -H polishallthethings.com >> ~/.ssh/known_hosts 
+         scp -r ./dist/* gkephart@polishallthethings.com:/var/www/polishallthethings.com/html
 ```
 - Push your changes to github to trigger the action and test deploying your site
  
