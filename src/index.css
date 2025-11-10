@@ -1,4 +1,42 @@
 @import "tailwindcss";
 @import "flowbite/src/themes/default.css";
+@import url('https://fonts.googleapis.com/css?family=Merienda:700|Nunito:400');
+
 @plugin "flowbite/plugin";
 @source "../node_modules/flowbite";
+
+body {
+    font-family: 'Nunito';
+    font-weight: 400;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Merienda';
+    font-weight: 700;
+}
+
+@theme {
+    /* Font Sizes */
+    --font-size-sm: 0.800rem;
+    --font-size-base: 1rem;
+    --font-size-xl: 1.250rem;
+    --font-size-2xl: 1.563rem;
+    --font-size-3xl: 1.954rem;
+    --font-size-4xl: 2.442rem;
+    --font-size-5xl: 3.053rem;
+
+    /* Font Families */
+    --font-heading: "Merienda", ui-sans-serif, system-ui, sans-serif;
+    --font-body: "Nunito", ui-sans-serif, system-ui, sans-serif;
+
+    /* Font Weights */
+    --font-weight-normal: 400;
+    --font-weight-bold: 700;
+
+    /* Colors */
+    --color-text: #050315;
+    --color-background: #FFFFFF;
+    --color-primary: #666666;
+    --color-secondary: #666666;
+    --color-accent: #777777;
+}

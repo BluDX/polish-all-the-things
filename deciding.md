@@ -96,12 +96,10 @@
 <!-- Logo -->
 <img class="h-auto w-full" src="/logo.png" alt="Polish ALL the Things! Logo">
 
-<div class="bg-gradient-to-b from-fuchsia-500 via-yellow-500 via-green-500 to-blue-500">
-
 <!-- Shop Sections & Portfolio -->
 <div id="shop">
 
-    <div id="pressons" class="w-screen text-white p-8">
+    <div id="pressons" class="w-screen bg-blue-500 text-white p-8">
         <div class="max-w-screen-xl mx-auto">
             <h2 class="text-4xl font-bold font-heading mb-6 text-center">Press-On Nails</h2>
 
@@ -121,7 +119,7 @@
         </div>
     </div>
 
-    <div id="kit" class="w-screen text-white p-8">
+    <div id="kit" class="w-screen bg-blue-500 text-white p-8">
         <div class="max-w-screen-xl mx-auto">
             <h2 class="text-4xl font-bold font-heading mb-6 text-center">Press-On Sizing Kit</h2>
 
@@ -129,7 +127,7 @@
                 <!-- Text Content -->
                 <div>
                     <p class="text-lg leading-relaxed">
-                        Finding your perfect nail fit has never been easier! With a press-on nail sizing kit, you can quickly match each finger to its ideal size - no guessing, no stress. The kit lets you test different sizes in your preferred shape so your press-ons feel comfortable and look flawlessly natural. And with Apres Gel-X’s half-sizes, you get an even more precise fit for every nail, ensuring a smooth, seamless look from thumb to pinky. It’s the simple, foolproof way to get salon-perfect nails that feel custom-made just for you!  Please use this easy <a style="color:gray" hover="purple" href="https://sites.google.com/view/polishallthethings/press-on-guide">Press-On Guide</a> to determine what shapes we have available.
+                        Finding your perfect nail fit has never been easier! With a press-on nail sizing kit, you can quickly match each finger to its ideal size - no guessing, no stress. The kit lets you test different sizes in your preferred shape so your press-ons feel comfortable and look flawlessly natural. And with Apres Gel-X’s half-sizes, you get an even more precise fit for every nail, ensuring a smooth, seamless look from thumb to pinky. It’s the simple, foolproof way to get salon-perfect nails that feel custom-made just for you!  Please use this easy <a href="https://sites.google.com/view/polishallthethings/press-on-guide">Press-On Guide</a> to determine what shapes we have available.
                     </p>
                 </div>
 
@@ -141,7 +139,7 @@
         </div>
     </div>
 
-    <div id="vinyls" class="w-screen text-white p-8">
+    <div id="vinyls" class="w-screen bg-blue-500 text-white p-8">
         <div class="max-w-screen-xl mx-auto">
             <h2 class="text-4xl font-bold font-heading mb-6 text-center">Nail Art Vinyls</h2>
 
@@ -161,7 +159,7 @@
         </div>
     </div>
 
-    <div id="decals" class="w-screen text-white p-8">
+    <div id="decals" class="w-screen bg-blue-500 text-white p-8">
         <div class="max-w-screen-xl mx-auto">
             <h2 class="text-4xl font-bold font-heading mb-6 text-center">Waterslide Decals</h2>
 
@@ -181,7 +179,7 @@
         </div>
     </div>
 
-    <div id="jewelry" class="w-screen text-white p-8">
+    <div id="jewelry" class="w-screen bg-blue-500 text-white p-8">
         <div class="max-w-screen-xl mx-auto">
             <h2 class="text-4xl font-bold font-heading mb-6 text-center">Jewelry Made with Nail Polish</h2>
 
@@ -202,7 +200,7 @@
     </div>
 </div>
 
-<!--<div class="bg-radial from-blue-500 to-purple-600">-->
+<div class="bg-radial from-blue-500 to-purple-600">
     <section id="contact">
         <div class="py-8 lg:py-4 px-4 mx-auto max-w-screen-xl">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -276,7 +274,3 @@
         </div>
     </footer>
 </div>
-
-<script type="module" src="/src/main.js"></script>
-</body>
-</html>
