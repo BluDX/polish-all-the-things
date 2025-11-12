@@ -34,7 +34,7 @@
                     <a href="#about" class="block py-2 px-3 text-white rounded-sm hover:bg-gray-600 lg:hover:bg-transparent lg:border-0 lg:hover:text-secondary lg:p-0 lg:text-text">About</a>
                 </li>
                 <li>
-                    <a href="http://www.blu.fyi/search/label/%F0%9F%92%85%20%F0%9F%93%B7" class="block py-2 px-3 text-white rounded-sm hover:bg-gray-600 lg:hover:bg-transparent lg:border-0 lg:hover:text-secondary lg:p-0 lg:text-text">Blog</a>
+                    <a href="http://www.blu.fyi/search/label/%F0%9F%92%85%20%F0%9F%93%B7" target="_blank" class="block py-2 px-3 text-white rounded-sm hover:bg-gray-600 lg:hover:bg-transparent lg:border-0 lg:hover:text-secondary lg:p-0 lg:text-text">Blog</a>
                 </li>
                 <li>
                     <a href="#contact" class="block py-2 px-3 text-white rounded-sm hover:bg-gray-600 lg:hover:bg-transparent lg:border-0 lg:hover:text-secondary lg:p-0 lg:text-text">Contact</a>
@@ -51,13 +51,13 @@
                     <div id="dropdownInstructions" class="z-10 hidden font-normal bg-gray-700/85 border border-gray-400 divide-y divide-gray-400 rounded-lg shadow-lg w-44">
                         <ul class="py-2 text-sm text-white" aria-labelledby="dropdownInstructionsLink">
                             <li>
-                                <a href="https://sites.google.com/view/polishallthethings/care-of-jewelry" class="block px-4 py-2 hover:bg-gray-600">Care of Jewelry</a>
+                                <a href="/care-of-jewelry" class="block px-4 py-2 hover:bg-gray-600">Care of Jewelry</a>
                             </li>
                             <li>
-                                <a href="https://sites.google.com/view/polishallthethings/instructions/decal-instructions" class="block px-4 py-2 hover:bg-gray-600">Decal Application</a>
+                                <a href="/decal-application" class="block px-4 py-2 hover:bg-gray-600">Decal Application</a>
                             </li>
                             <li>
-                                <a href="https://sites.google.com/view/polishallthethings/instructions/press-on-instructions" class="block px-4 py-2 hover:bg-gray-600">Press-On Application</a>
+                                <a href="/press-on-application" class="block px-4 py-2 hover:bg-gray-600">Press-On Application</a>
                             </li>
                         </ul>
                     </div>
@@ -278,5 +278,38 @@
 </div>
 
 <script type="module" src="/src/main.js"></script>
+
+<!-- Back to Top Button (shows on scroll) -->
+<a href="#" id="back-to-top" class="hidden fixed bottom-8 right-8 bg-secondary hover:bg-accent text-white p-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 z-50 group opacity-0">
+    <svg class="w-6 h-6 group-hover:-translate-y-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/>
+    </svg>
+    <span class="sr-only">Back to top</span>
+</a>
+
+<script>
+  // Show/hide back to top button on scroll
+  const backToTop = document.getElementById('back-to-top');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+      backToTop.classList.remove('hidden', 'opacity-0');
+      backToTop.classList.add('opacity-100');
+    } else {
+      backToTop.classList.add('opacity-0');
+      setTimeout(() => {
+        if (window.scrollY <= 300) {
+          backToTop.classList.add('hidden');
+        }
+      }, 300);
+    }
+  });
+
+  // Smooth scroll to top
+  backToTop.addEventListener('click', (e) => {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+</script>
+
 </body>
 </html>
