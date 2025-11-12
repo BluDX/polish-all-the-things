@@ -20,11 +20,11 @@ jobs:
       - name: Build Vite site
         run: npm run build
 
-      - name: Copy additional HTML files to dist (don't overwrite)
-        run: |
-          [ -f care-of-jewelry.html ] && cp -n care-of-jewelry.html ./dist/ || true
-          [ -f decal-application.html ] && cp -n decal-application.html ./dist/ || true
-          [ -f press-on-application.html ] && cp -n press-on-application.html ./dist/ || true
+#      - name: Copy additional HTML files to dist (don't overwrite)
+#        run: |
+#          [ -f care-of-jewelry.html ] && cp -n care-of-jewelry.html ./dist/ || true
+#          [ -f decal-application.html ] && cp -n decal-application.html ./dist/ || true
+#          [ -f press-on-application.html ] && cp -n press-on-application.html ./dist/ || true
 
       - name: Check dist contents
         run: ls -la ./dist/
