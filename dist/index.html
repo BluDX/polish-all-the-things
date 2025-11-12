@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Outline&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-B6Yp9sAj.png">
+    <title>Polish ALL the Things!</title>
+
+  <script type="module" crossorigin src="/assets/index-DKnLJh_a.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-Z8xFdJ0m.css">
+</head>
+<body class="font-body">
+
+<!-- Navbar -->
+<nav class="bg-transparent border-secondary absolute top-0 left-0 right-0 z-50">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <span class="self-center text-2xl font-bold font-heading whitespace-nowrap text-text hidden lg:inline">Polish ALL the Things!</span>
+        </a>
+        <button data-collapse-toggle="navbar-multi-level" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-text rounded-lg lg:hidden hover:bg-accent focus:outline-none focus:ring-2 focus:ring-secondary" aria-controls="navbar-multi-level" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+            </svg>
+        </button>
+        <div class="hidden w-full lg:block lg:w-auto" id="navbar-multi-level">
+            <ul class="flex flex-col font-medium p-4 lg:p-0 mt-4 border border-gray-400 rounded-lg bg-gray-700/85 shadow-lg lg:space-x-8 rtl:space-x-reverse lg:flex-row lg:mt-0 lg:border-0 lg:bg-transparent lg:shadow-none">
+                <li>
+                    <a href="#" class="block py-2 px-3 text-white bg-secondary rounded-sm lg:bg-transparent lg:text-secondary lg:p-0 font-bold" aria-current="page">Home</a>
+                </li>
+                <li>
+                    <a href="#about" class="block py-2 px-3 text-white rounded-sm hover:bg-gray-600 lg:hover:bg-transparent lg:border-0 lg:hover:text-secondary lg:p-0 lg:text-text">About</a>
+                </li>
+                <li>
+                    <a href="http://www.blu.fyi/search/label/%F0%9F%92%85%20%F0%9F%93%B7" target="_blank" class="block py-2 px-3 text-white rounded-sm hover:bg-gray-600 lg:hover:bg-transparent lg:border-0 lg:hover:text-secondary lg:p-0 lg:text-text">Blog</a>
+                </li>
+                <li>
+                    <a href="#contact" class="block py-2 px-3 text-white rounded-sm hover:bg-gray-600 lg:hover:bg-transparent lg:border-0 lg:hover:text-secondary lg:p-0 lg:text-text">Contact</a>
+                </li>
+                <li>
+                    <a href="#follow" class="block py-2 px-3 text-white rounded-sm hover:bg-gray-600 lg:hover:bg-transparent lg:border-0 lg:hover:text-secondary lg:p-0 lg:text-text">Follow</a>
+                </li>
+                <li>
+                    <button id="dropdownInstructionsLink" data-dropdown-toggle="dropdownInstructions" class="flex items-center justify-between w-full py-2 px-3 text-white hover:bg-gray-600 lg:hover:bg-transparent lg:border-0 lg:hover:text-secondary lg:p-0 lg:w-auto lg:text-text">Instructions<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                    </svg></button>
+
+                    <!-- Dropdown menu -->
+                    <div id="dropdownInstructions" class="z-10 hidden font-normal bg-gray-700/85 border border-gray-400 divide-y divide-gray-400 rounded-lg shadow-lg w-44">
+                        <ul class="py-2 text-sm text-white" aria-labelledby="dropdownInstructionsLink">
+                            <li>
+                                <a href="public/care-of-jewelry.html" class="block px-4 py-2 hover:bg-gray-600">Care of Jewelry</a>
+                            </li>
+                            <li>
+                                <a href="public/decal-application.html" class="block px-4 py-2 hover:bg-gray-600">Decal Application</a>
+                            </li>
+                            <li>
+                                <a href="public/press-on-application.html" class="block px-4 py-2 hover:bg-gray-600">Press-On Application</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <button id="dropdownShopLink" data-dropdown-toggle="dropdownShop" class="flex items-center justify-between w-full py-2 px-3 text-white hover:bg-gray-600 lg:hover:bg-transparent lg:border-0 lg:hover:text-secondary lg:p-0 lg:w-auto lg:text-text">Shop<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                    </svg></button>
+
+                    <!-- Dropdown menu -->
+                    <div id="dropdownShop" class="z-10 hidden font-normal bg-gray-700/85 border border-gray-400 divide-y divide-gray-400 rounded-lg shadow-lg w-44">
+                        <ul class="py-2 text-shadow-lg text-white text-shadow-black" aria-labelledby="dropdownShopLink">
+                            <li>
+                                <a href="#pressons" class="block px-4 py-2 hover:bg-gray-600">Press-On Nails</a>
+                            </li>
+                            <li>
+                                <a href="#kit" class="block px-4 py-2 hover:bg-gray-600">Press-On Sizing Kit</a>
+                            </li>
+                            <li>
+                                <a href="#vinyls" class="block px-4 py-2 hover:bg-gray-600">Nail Art Vinyls</a>
+                            </li>
+                            <li>
+                                <a href="#decals" class="block px-4 py-2 hover:bg-gray-600">Waterslide Decals</a>
+                            </li>
+                            <li>
+                                <a href="#jewelry" class="block px-4 py-2 hover:bg-gray-600">Jewelry</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Logo -->
+<img class="h-auto w-full" src="/logo.png" alt="Polish ALL the Things! Logo">
+
+<div class="bg-gradient-to-b from-fuchsia-500 via-yellow-500 via-green-500 to-blue-500">
+
+<!-- Shop Sections & Portfolio -->
+<div id="shop">
+
+    <div id="pressons" class="text-white p-8">
+        <div class="max-w-screen-xl mx-auto">
+            <h2 class="text-4xl font-bold font-heading mb-6 text-center">Press-On Nails</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <!-- Text Content -->
+                <div>
+                    <p class="text-lg leading-relaxed">
+                        Get salon-quality nails without the hassle! We only use Apres Gel-X full-cover tips, which give you that professional strength and flawless look - without the bulky feel. Skip the long salon visits and just press them on; you’ll be ready to go in minutes. Plus, they’re reusable - just pop them off, file off the glue, and rock your set again up to three times. And here’s the best part: Since the gel is already cured, there’s no risk of gel allergies - just beautiful, worry-free nails every time!
+                    </p>
+                </div>
+
+                <!-- Image -->
+                <div>
+                    <img src="/presson.jpg" alt="Press-On Nails" class="rounded-lg shadow-lg w-auto h-auto">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="kit" class="text-white p-8">
+        <div class="max-w-screen-xl mx-auto">
+            <h2 class="text-4xl font-bold font-heading mb-6 text-center">Press-On Sizing Kit</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <!-- Text Content -->
+                <div>
+                    <p class="text-lg leading-relaxed">
+                        Finding your perfect nail fit has never been easier! With a press-on nail sizing kit, you can quickly match each finger to its ideal size - no guessing, no stress. The kit lets you test different sizes in your preferred shape so your press-ons feel comfortable and look flawlessly natural. And with Apres Gel-X’s half-sizes, you get an even more precise fit for every nail, ensuring a smooth, seamless look from thumb to pinky. It’s the simple, foolproof way to get salon-perfect nails that feel custom-made just for you!  Please use this easy <a style="color:gray" hover="purple" href="https://sites.google.com/view/polishallthethings/press-on-guide">Press-On Guide</a> to determine what shapes we have available.
+                    </p>
+                </div>
+
+                <!-- Image -->
+                <div>
+                    <img src="/kit.jpg" alt="Press-On Sizing Kit" class="rounded-lg shadow-lg w-auto h-auto">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="vinyls" class="text-white p-8">
+        <div class="max-w-screen-xl mx-auto">
+            <h2 class="text-4xl font-bold font-heading mb-6 text-center">Nail Art Vinyls</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <!-- Text Content -->
+                <div>
+                    <p class="text-lg leading-relaxed">
+                        More into DIY?  Nail art vinyls make it easy to unleash your creativity and design like a pro! Use them as fun decorations on their own or as handy stencils to craft custom patterns, crisp lines, and eye-catching details. Whether you’re going for chic geometric shapes, playful patterns, or intricate accents, vinyls help you get a flawless finish without the guesswork. Just stick, paint, and peel for instant nail art magic - perfect for beginners and pros alike!
+                    </p>
+                </div>
+
+                <!-- Image -->
+                <div>
+                    <img src="/vinyls.jpg" alt="nail art vinyls" class="rounded-lg shadow-lg w-auto h-auto">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="decals" class="text-white p-8">
+        <div class="max-w-screen-xl mx-auto">
+            <h2 class="text-4xl font-bold font-heading mb-6 text-center">Waterslide Decals</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <!-- Text Content -->
+                <div>
+                    <p class="text-lg leading-relaxed">
+                        Waterslide decals make creating stunning nail art effortless and fun! Simply soak, slide, and apply - no steady hand or advanced painting skills required. These ultra-thin designs lay smoothly on the nail, giving a professional, hand-painted look in minutes. Best of all, they can be custom designed to match your unique style - whether you want elegant florals, bold graphics, or personalized art that’s totally your own. With waterslide decals, you get gorgeous, one-of-a-kind nails with minimal effort and maximum creativity!
+                    </p>
+                </div>
+
+                <!-- Image -->
+                <div>
+                    <img src="/decals.jpeg" alt="Waterslide Decals" class="rounded-lg shadow-lg w-full h-auto">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="jewelry" class="text-white p-8">
+        <div class="max-w-screen-xl mx-auto">
+            <h2 class="text-4xl font-bold font-heading mb-6 text-center">Jewelry Made with Nail Polish</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <!-- Text Content -->
+                <div>
+                    <p class="text-lg leading-relaxed">
+                        Each piece of my nail polish jewelry is a tiny work of art - handcrafted with layers of vibrant, shimmering polish to create depth, color, and light you won’t find anywhere else. Because I use real nail polish - including rare and discontinued shades - every pendant, ring, and pair of earrings is truly one of a kind. The result is jewelry that captures the sparkle and personality of nail art in a wearable, lasting form. Whether you’re drawn to bold statement pieces or soft, ethereal hues, you’ll find something beautifully unique - just like you.
+                    </p>
+                </div>
+
+                <!-- Image -->
+                <div>
+                    <img src="/jewelry.jpg" alt="Jewelry Made with Nail Polish" class="rounded-lg shadow-lg w-auto h-auto">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--<div class="bg-radial from-blue-500 to-purple-600">-->
+    <section id="contact">
+        <div class="py-8 lg:py-4 px-4 mx-auto max-w-screen-xl">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Contact Form - Left Side -->
+                <div>
+                    <h2 class="mb-4 text-4xl tracking-tight font-bold font-heading text-center text-text">Contact</h2>
+                    <p class="mb-8 font-normal text-center text-text sm:text-xl">Have questions? Need an order update? Let us know.<br><br><span class="italic">This is the best way to reach us for inquiries related to customer service.</span></p>
+
+                    <form action="#" class="space-y-3">
+                        <div>
+                            <label for="email" class="block mb-2 text-normal font-medium text-text">Your email</label>
+                            <input type="email" id="email" class="shadow-sm bg-background border border-secondary text-text text-sm rounded-lg focus:ring-accent focus:border-accent block w-full p-2.5" placeholder="name@example.com" required>
+                        </div>
+                        <div>
+                            <label for="subject" class="block mb-2 text-normal font-medium text-text">Subject</label>
+                            <input type="text" id="subject" class="block p-3 w-full text-sm text-text bg-background rounded-lg border border-secondary shadow-sm focus:ring-accent focus:border-accent" placeholder="Let us know how we can help you" required>
+                        </div>
+                        <div class="sm:col-span-2">
+                            <label for="message" class="block mb-2 text-normal font-medium text-text">Your message; please include order number if applicable!</label>
+                            <textarea id="message" rows="6" class="block p-2.5 w-full text-sm text-text bg-background rounded-lg shadow-sm border border-secondary focus:ring-accent focus:border-accent" placeholder="Leave a comment..."></textarea>
+                        </div>
+                        <button type="submit" class="py-3 px-5 text-sm font-medium text-center text-background rounded-lg bg-secondary sm:w-fit hover:bg-accent focus:ring-4 focus:outline-none focus:ring-primary mx-auto block">Send message</button>
+                    </form>
+                </div>
+
+                <!-- Social Media - Right Side -->
+                <div id="follow" class="flex flex-col justify-start items-center">
+                    <h3 class="mb-5 text-4xl tracking-tight font-bold font-heading text-center text-text">Follow</h3>
+
+                    <!-- Social Media Links Box -->
+                    <div class="block max-w-lg p-6 bg-white border border-black rounded-lg shadow-sm mb-8">
+                        <div class="grid grid-cols-2 gap-4">
+                            <a href="https://www.facebook.com/PolishALLTheThings" class="flex items-center hover:opacity-75 transition-opacity">
+                                <img src="/facebook.png" alt="Facebook" class="w-6 h-6 mr-3">
+                                <span class="text-lg hover:text-secondary">Facebook</span>
+                            </a>
+                            <a href="https://www.instagram.com/polish_all_theThings/#" class="flex items-center hover:opacity-75 transition-opacity">
+                                <img src="/instagram.png" alt="Instagram" class="w-6 h-6 mr-3">
+                                <span class="text-lg hover:text-secondary">Instagram</span>
+                            </a>
+                            <a href="https://www.pinterest.com/polishallthethings/" class="flex items-center hover:opacity-75 transition-opacity">
+                                <img src="/pinterest.png" alt="Pinterest" class="w-6 h-6 mr-3">
+                                <span class="text-lg hover:text-secondary">Pinterest</span>
+                            </a>
+                            <a href="https://www.tiktok.com/@polish_all_thethings" class="flex items-center hover:opacity-75 transition-opacity">
+                                <img src="/tiktok.png" alt="TikTok" class="w-6 h-6 mr-3">
+                                <span class="text-lg hover:text-secondary">TikTok</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- About Heading -->
+                    <h4 class="mb-7 text-4xl tracking-tight font-bold font-heading text-center text-text">About</h4>
+
+                    <!-- About Box -->
+                    <section id="about" class="block max-w-lg p-6 bg-white border border-black rounded-lg shadow-sm hover:bg-gray-100">
+                        <p class="font-normal">Hello!  My name is Blu and I started doing nail art as a hobby in 2011.  If you check my portfolio, you will see my evolution over the years.  I started DIY nails at home with techniques like sponging and taping, then I discovered stamping and was completely obsessed.  I currently have a polish collection of 5000-ish bottles, and around 1000 unique stamping plates.  Of course, I have stones, studs, piercing tools, foils, powders, and just about every kind of embellishment that has come out over the years. I love to experiment and try new techniques.  If you would like to collab on a custom set of press-ons, get in touch using the contact form!</p>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+            <hr class="my-6 border-secondary sm:mx-auto lg:my-8" />
+            <div class="flex items-center justify-center">
+                <span class="text-sm text-text text-center">© 2025 <a href="#" class="hover:underline">Polish ALL the Things!</a>. All Rights Reserved.</span>
+            </div>
+        </div>
+    </footer>
+</div>
+
+
+<!-- Back to Top Button (shows on scroll) -->
+<a href="#" id="back-to-top" class="hidden fixed bottom-8 right-8 bg-secondary hover:bg-accent text-white p-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 z-50 group opacity-0">
+    <svg class="w-6 h-6 group-hover:-translate-y-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/>
+    </svg>
+    <span class="sr-only">Back to top</span>
+</a>
+
+
+<!--Back to Top Button-->
+<script>
+  const backToTop = document.getElementById('back-to-top');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+      backToTop.classList.remove('hidden', 'opacity-0');
+      backToTop.classList.add('opacity-100');
+    } else {
+      backToTop.classList.add('opacity-0');
+      setTimeout(() => {
+        if (window.scrollY <= 300) {
+          backToTop.classList.add('hidden');
+        }
+      }, 300);
+    }
+  });
+
+  // Smooth scroll to top
+  backToTop.addEventListener('click', (e) => {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+</script>
+
+</body>
+</html>
