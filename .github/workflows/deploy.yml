@@ -21,7 +21,10 @@ jobs:
       - name: Build Vite site
         run: npm run build
 
+      - name: Check dist contents
+        run: ls -la ./dist/
+
       - name: Deploy to server
         run: |
-         ssh-keyscan -H polishallthethings.com >> ~/.ssh/known_hosts 
-         scp -r ./dist/* BluDX@polishallthethings.com:/var/www/polishallthethings.com/html
+          ssh-keyscan -H polishallthethings.com >> ~/.ssh/known_hosts 
+          scp -r ./dist/* BluDX@polishallthethings.com:/var/www/polishallthethings.com/html
