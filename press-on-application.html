@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Bungee+Outline&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" sizes="32x32" href="public/favicon.png">
     <title>Polish ALL the Things! | Press-On Application</title>
-    <link href="/assets/index-Z8xFdJ0m.css" rel="stylesheet">
+    <link href="/src/index.css" rel="stylesheet">
 
 </head>
 <body class="font-body">
@@ -156,18 +156,47 @@
     </footer>
 </div>
 
-<script type="module" src="/src/main.js"></script>
+<!--<script type="module" src="/src/main.js"></script>-->
 
-<!--Got this from Claude for Sticky Menus-->
 <script type="module" src="/src/main.js"></script>
-<script type="module">
-  import { initFlowbite } from 'flowbite';
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Get all dropdown buttons
+    const instructionsBtn = document.getElementById('dropdownInstructionsLink');
+    const shopBtn = document.getElementById('dropdownShopLink');
+    const instructionsMenu = document.getElementById('dropdownInstructions');
+    const shopMenu = document.getElementById('dropdownShop');
 
-  // Initialize Flowbite when the page loads
-  document.addEventListener('DOMContentLoaded', () => {
-    initFlowbite();
+    // Toggle Instructions dropdown
+    if (instructionsBtn && instructionsMenu) {
+      instructionsBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        instructionsMenu.classList.toggle('hidden');
+        shopMenu.classList.add('hidden'); // Close other dropdown
+      });
+    }
+
+    // Toggle Shop dropdown
+    if (shopBtn && shopMenu) {
+      shopBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        shopMenu.classList.toggle('hidden');
+        instructionsMenu.classList.add('hidden'); // Close other dropdown
+      });
+    }
+
+    // Close dropdowns when clicking outside
+    document.addEventListener('click', function(e) {
+      if (!e.target.closest('#dropdownInstructionsLink') && !e.target.closest('#dropdownInstructions')) {
+        instructionsMenu.classList.add('hidden');
+      }
+      if (!e.target.closest('#dropdownShopLink') && !e.target.closest('#dropdownShop')) {
+        shopMenu.classList.add('hidden');
+      }
+    });
   });
 </script>
-
 </body>
 </html>
