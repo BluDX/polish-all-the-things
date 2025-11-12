@@ -17,73 +17,73 @@
 <nav class="bg-transparent border-secondary absolute top-0 left-0 right-0 z-50">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-            <span class="self-center text-2xl font-bold font-heading whitespace-nowrap text-text">Polish ALL the Things!</span>
+            <span class="self-center text-2xl font-bold font-heading whitespace-nowrap text-text hidden lg:inline">Polish ALL the Things!</span>
         </a>
-        <button data-collapse-toggle="navbar-multi-level" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-text rounded-lg md:hidden hover:bg-accent focus:outline-none focus:ring-2 focus:ring-secondary" aria-controls="navbar-multi-level" aria-expanded="false">
+        <button data-collapse-toggle="navbar-multi-level" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-text rounded-lg lg:hidden hover:bg-accent focus:outline-none focus:ring-2 focus:ring-secondary" aria-controls="navbar-multi-level" aria-expanded="false">
             <span class="sr-only">Open main menu</span>
             <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
             </svg>
         </button>
-        <div class="hidden w-full md:block md:w-auto" id="navbar-multi-level">
-            <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-secondary rounded-lg bg-accent md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent">
+        <div class="hidden w-full lg:block lg:w-auto" id="navbar-multi-level">
+            <ul class="flex flex-col font-medium p-4 lg:p-0 mt-4 border border-gray-400 rounded-lg bg-gray-700/85 shadow-lg lg:space-x-8 rtl:space-x-reverse lg:flex-row lg:mt-0 lg:border-0 lg:bg-transparent lg:shadow-none">
                 <li>
-                    <a href="#" class="block py-2 px-3 text-background bg-secondary rounded-sm md:bg-transparent md:text-secondary md:p-0 font-bold" aria-current="page">Home</a>
+                    <a href="#" class="block py-2 px-3 text-white bg-secondary rounded-sm lg:bg-transparent lg:text-secondary lg:p-0 font-bold" aria-current="page">Home</a>
                 </li>
                 <li>
-                    <a href="#about" class="block py-2 px-3 text-text rounded-sm hover:bg-accent md:hover:bg-transparent md:border-0 md:hover:text-secondary md:p-0">About</a>
+                    <a href="#about" class="block py-2 px-3 text-white rounded-sm hover:bg-gray-600 lg:hover:bg-transparent lg:border-0 lg:hover:text-secondary lg:p-0 lg:text-text">About</a>
                 </li>
                 <li>
-                    <a href="http://www.blu.fyi/search/label/%F0%9F%92%85%20%F0%9F%93%B7" class="block py-2 px-3 text-text rounded-sm hover:bg-accent md:hover:bg-transparent md:border-0 md:hover:text-secondary md:p-0">Blog</a>
+                    <a href="http://www.blu.fyi/search/label/%F0%9F%92%85%20%F0%9F%93%B7" class="block py-2 px-3 text-white rounded-sm hover:bg-gray-600 lg:hover:bg-transparent lg:border-0 lg:hover:text-secondary lg:p-0 lg:text-text">Blog</a>
                 </li>
                 <li>
-                    <a href="#contact" class="block py-2 px-3 text-text rounded-sm hover:bg-accent md:hover:bg-transparent md:border-0 md:hover:text-secondary md:p-0">Contact</a>
+                    <a href="#contact" class="block py-2 px-3 text-white rounded-sm hover:bg-gray-600 lg:hover:bg-transparent lg:border-0 lg:hover:text-secondary lg:p-0 lg:text-text">Contact</a>
                 </li>
                 <li>
-                    <a href="#follow" class="block py-2 px-3 text-text rounded-sm hover:bg-accent md:hover:bg-transparent md:border-0 md:hover:text-secondary md:p-0">Follow</a>
+                    <a href="#follow" class="block py-2 px-3 text-white rounded-sm hover:bg-gray-600 lg:hover:bg-transparent lg:border-0 lg:hover:text-secondary lg:p-0 lg:text-text">Follow</a>
                 </li>
                 <li>
-                    <button id="dropdownInstructionsLink" data-dropdown-toggle="dropdownInstructions" class="flex items-center justify-between w-full py-2 px-3 text-text hover:bg-accent md:hover:bg-transparent md:border-0 md:hover:text-secondary md:p-0 md:w-auto">Instructions<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                    <button id="dropdownInstructionsLink" data-dropdown-toggle="dropdownInstructions" class="flex items-center justify-between w-full py-2 px-3 text-white hover:bg-gray-600 lg:hover:bg-transparent lg:border-0 lg:hover:text-secondary lg:p-0 lg:w-auto lg:text-text">Instructions<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
                     </svg></button>
 
                     <!-- Dropdown menu -->
-                    <div id="dropdownInstructions" class="z-10 hidden font-normal bg-transparent divide-y divide-secondary rounded-lg shadow-sm w-44">
-                        <ul class="py-2 text-sm text-text" aria-labelledby="dropdownInstructionsLink">
+                    <div id="dropdownInstructions" class="z-10 hidden font-normal bg-gray-700/85 border border-gray-400 divide-y divide-gray-400 rounded-lg shadow-lg w-44">
+                        <ul class="py-2 text-sm text-white" aria-labelledby="dropdownInstructionsLink">
                             <li>
-                                <a href="https://sites.google.com/view/polishallthethings/care-of-jewelry" class="block px-4 py-2 hover:bg-accent">Care of Jewelry</a>
+                                <a href="https://sites.google.com/view/polishallthethings/care-of-jewelry" class="block px-4 py-2 hover:bg-gray-600">Care of Jewelry</a>
                             </li>
                             <li>
-                                <a href="https://sites.google.com/view/polishallthethings/instructions/decal-instructions" class="block px-4 py-2 hover:bg-accent">Decal Application</a>
+                                <a href="https://sites.google.com/view/polishallthethings/instructions/decal-instructions" class="block px-4 py-2 hover:bg-gray-600">Decal Application</a>
                             </li>
                             <li>
-                                <a href="https://sites.google.com/view/polishallthethings/instructions/press-on-instructions" class="block px-4 py-2 hover:bg-accent">Press-On Application</a>
+                                <a href="https://sites.google.com/view/polishallthethings/instructions/press-on-instructions" class="block px-4 py-2 hover:bg-gray-600">Press-On Application</a>
                             </li>
                         </ul>
                     </div>
                 </li>
                 <li>
-                    <button id="dropdownShopLink" data-dropdown-toggle="dropdownShop" class="flex items-center justify-between w-full py-2 px-3 text-text hover:bg-accent md:hover:bg-transparent md:border-0 md:hover:text-secondary md:p-0 md:w-auto">Shop<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                    <button id="dropdownShopLink" data-dropdown-toggle="dropdownShop" class="flex items-center justify-between w-full py-2 px-3 text-white hover:bg-gray-600 lg:hover:bg-transparent lg:border-0 lg:hover:text-secondary lg:p-0 lg:w-auto lg:text-text">Shop<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
                     </svg></button>
 
                     <!-- Dropdown menu -->
-                    <div id="dropdownShop" class="z-10 hidden font-normal bg-transparent divide-y divide-secondary rounded-lg shadow-sm w-44">
-                        <ul class="py-2 text-sm text-text" aria-labelledby="dropdownShopLink">
+                    <div id="dropdownShop" class="z-10 hidden font-normal bg-gray-700/85 border border-gray-400 divide-y divide-gray-400 rounded-lg shadow-lg w-44">
+                        <ul class="py-2 text-shadow-lg text-white text-shadow-black" aria-labelledby="dropdownShopLink">
                             <li>
-                                <a href="#pressons" class="block px-4 py-2 hover:bg-accent">Press-On Nails</a>
+                                <a href="#pressons" class="block px-4 py-2 hover:bg-gray-600">Press-On Nails</a>
                             </li>
                             <li>
-                                <a href="#kit" class="block px-4 py-2 hover:bg-accent">Press-On Sizing Kit</a>
+                                <a href="#kit" class="block px-4 py-2 hover:bg-gray-600">Press-On Sizing Kit</a>
                             </li>
                             <li>
-                                <a href="#vinyls" class="block px-4 py-2 hover:bg-accent">Nail Art Vinyls</a>
+                                <a href="#vinyls" class="block px-4 py-2 hover:bg-gray-600">Nail Art Vinyls</a>
                             </li>
                             <li>
-                                <a href="#decals" class="block px-4 py-2 hover:bg-accent">Waterslide Decals</a>
+                                <a href="#decals" class="block px-4 py-2 hover:bg-gray-600">Waterslide Decals</a>
                             </li>
                             <li>
-                                <a href="#jewelry" class="block px-4 py-2 hover:bg-accent">Jewelry</a>
+                                <a href="#jewelry" class="block px-4 py-2 hover:bg-gray-600">Jewelry</a>
                             </li>
                         </ul>
                     </div>
@@ -101,7 +101,7 @@
 <!-- Shop Sections & Portfolio -->
 <div id="shop">
 
-    <div id="pressons" class="w-screen text-white p-8">
+    <div id="pressons" class="text-white p-8">
         <div class="max-w-screen-xl mx-auto">
             <h2 class="text-4xl font-bold font-heading mb-6 text-center">Press-On Nails</h2>
 
@@ -121,7 +121,7 @@
         </div>
     </div>
 
-    <div id="kit" class="w-screen text-white p-8">
+    <div id="kit" class="text-white p-8">
         <div class="max-w-screen-xl mx-auto">
             <h2 class="text-4xl font-bold font-heading mb-6 text-center">Press-On Sizing Kit</h2>
 
@@ -141,7 +141,7 @@
         </div>
     </div>
 
-    <div id="vinyls" class="w-screen text-white p-8">
+    <div id="vinyls" class="text-white p-8">
         <div class="max-w-screen-xl mx-auto">
             <h2 class="text-4xl font-bold font-heading mb-6 text-center">Nail Art Vinyls</h2>
 
@@ -161,7 +161,7 @@
         </div>
     </div>
 
-    <div id="decals" class="w-screen text-white p-8">
+    <div id="decals" class="text-white p-8">
         <div class="max-w-screen-xl mx-auto">
             <h2 class="text-4xl font-bold font-heading mb-6 text-center">Waterslide Decals</h2>
 
@@ -181,7 +181,7 @@
         </div>
     </div>
 
-    <div id="jewelry" class="w-screen text-white p-8">
+    <div id="jewelry" class="text-white p-8">
         <div class="max-w-screen-xl mx-auto">
             <h2 class="text-4xl font-bold font-heading mb-6 text-center">Jewelry Made with Nail Polish</h2>
 
