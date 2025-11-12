@@ -20,12 +20,6 @@ jobs:
       - name: Build Vite site
         run: npm run build
 
-      - name: Copy instruction pages to dist
-        run: |
-          cp care-of-jewelry.html ./dist/
-          cp decal-application.html ./dist/
-          cp press-on-application.html ./dist/
-
       - name: Check dist contents
         run: ls -la ./dist/
 
