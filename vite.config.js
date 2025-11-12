@@ -7,7 +7,7 @@ export default defineConfig({
         main: 'index.html',
         care: 'care-of-jewelry.html',
         decal: 'decal-application.html',
-        presson: 'press-on-application.html'
+        presson: 'press-on-application.html',
         guide: 'press-on-guide.html'
       }
     }
