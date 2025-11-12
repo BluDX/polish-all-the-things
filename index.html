@@ -9,7 +9,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./public/favicon.png">
     <title>Polish ALL the Things!</title>
     <link href="/src/index.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+
 </head>
 <body class="font-body">
 
@@ -309,6 +309,34 @@
   backToTop.addEventListener('click', (e) => {
     e.preventDefault();
     window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+</script>
+
+<!--Got this from Claude for Sticky Menus-->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Get all dropdown buttons
+    const dropdownButtons = document.querySelectorAll('[data-dropdown-toggle]');
+
+    dropdownButtons.forEach(button => {
+      button.addEventListener('click', function(e) {
+        e.preventDefault();
+        const dropdownId = this.getAttribute('data-dropdown-toggle');
+        const dropdown = document.getElementById(dropdownId);
+
+        // Toggle the dropdown
+        dropdown.classList.toggle('hidden');
+      });
+    });
+
+    // Close dropdowns when clicking outside
+    document.addEventListener('click', function(e) {
+      if (!e.target.closest('[data-dropdown-toggle]')) {
+        document.querySelectorAll('[id^="dropdown"]').forEach(dropdown => {
+          dropdown.classList.add('hidden');
+        });
+      }
+    });
   });
 </script>
 
