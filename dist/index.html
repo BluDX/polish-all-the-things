@@ -6,11 +6,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bungee+Outline&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-B6Yp9sAj.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-D_BLxveO.png">
     <title>Polish ALL the Things!</title>
 
-  <script type="module" crossorigin src="/assets/index-DKnLJh_a.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-Z8xFdJ0m.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function(){
+        emailjs.init("h_gRm3FI6OhGJeZhe"); //public key from EmailJS
+      })();
+    </script>
+
+  <script type="module" crossorigin src="/assets/main-Czev4N41.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/main-BkoHPm8K.js">
+  <link rel="stylesheet" crossorigin href="/assets/main-BpMZDNIn.css">
 </head>
 <body class="font-body">
 
@@ -35,6 +43,9 @@
                     <a href="#about" class="block py-2 px-3 text-white rounded-sm hover:bg-gray-600 lg:hover:bg-transparent lg:border-0 lg:hover:text-secondary lg:p-0 lg:text-text">About</a>
                 </li>
                 <li>
+                    <a href="#app" class="block py-2 px-3 text-white rounded-sm hover:bg-gray-600 lg:hover:bg-transparent lg:border-0 lg:hover:text-secondary lg:p-0 lg:text-text">✨ App</a>
+                </li>
+                <li>
                     <a href="http://www.blu.fyi/search/label/%F0%9F%92%85%20%F0%9F%93%B7" target="_blank" class="block py-2 px-3 text-white rounded-sm hover:bg-gray-600 lg:hover:bg-transparent lg:border-0 lg:hover:text-secondary lg:p-0 lg:text-text">Blog</a>
                 </li>
                 <li>
@@ -42,6 +53,9 @@
                 </li>
                 <li>
                     <a href="#follow" class="block py-2 px-3 text-white rounded-sm hover:bg-gray-600 lg:hover:bg-transparent lg:border-0 lg:hover:text-secondary lg:p-0 lg:text-text">Follow</a>
+                </li>
+                <li>
+                    <a href="press-on-guide.html" class="block py-2 px-3 text-white rounded-sm hover:bg-gray-600 lg:hover:bg-transparent lg:border-0 lg:hover:text-secondary lg:p-0 lg:text-text">Guide</a>
                 </li>
                 <li>
                     <button id="dropdownInstructionsLink" data-dropdown-toggle="dropdownInstructions" class="flex items-center justify-between w-full py-2 px-3 text-white hover:bg-gray-600 lg:hover:bg-transparent lg:border-0 lg:hover:text-secondary lg:p-0 lg:w-auto lg:text-text">Instructions<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
@@ -52,13 +66,13 @@
                     <div id="dropdownInstructions" class="z-10 hidden font-normal bg-gray-700/85 border border-gray-400 divide-y divide-gray-400 rounded-lg shadow-lg w-44">
                         <ul class="py-2 text-sm text-white" aria-labelledby="dropdownInstructionsLink">
                             <li>
-                                <a href="public/care-of-jewelry.html" class="block px-4 py-2 hover:bg-gray-600">Care of Jewelry</a>
+                                <a href="care-of-jewelry.html" class="block px-4 py-2 hover:bg-gray-600">Care of Jewelry</a>
                             </li>
                             <li>
-                                <a href="public/decal-application.html" class="block px-4 py-2 hover:bg-gray-600">Decal Application</a>
+                                <a href="decal-application.html" class="block px-4 py-2 hover:bg-gray-600">Decal Application</a>
                             </li>
                             <li>
-                                <a href="public/press-on-application.html" class="block px-4 py-2 hover:bg-gray-600">Press-On Application</a>
+                                <a href="press-on-application.html" class="block px-4 py-2 hover:bg-gray-600">Press-On Application</a>
                             </li>
                         </ul>
                     </div>
@@ -102,6 +116,26 @@
 <!-- Shop Sections & Portfolio -->
 <div id="shop">
 
+    <div id="app" class="text-white p-8">
+        <div class="max-w-screen-xl mx-auto">
+            <h2 class="text-4xl font-bold font-heading mb-6 text-center">✨ App</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <!-- Text Content -->
+                <div>
+                    <p class="text-lg leading-relaxed">
+                        Managing your nail polish collection has never been this fun! With Polish ALL the Things, you can catalog every bottle, plate, and tool in your stash — no more duplicate purchases, no more digging through drawers. The app lets you organize by brand, color, type, and even track limited edition releases so you never miss a drop. And with built-in destash and marketplace features, you can easily sell or trade polishes you're ready to part with, connecting you to a community of collectors who love nail art just as much as you do. It's the simple, all-in-one way to keep your collection beautifully organized and always at your fingertips! Head over to <a style="color:black" hover="purple" href="https://app.polishallthethings.com/" target="_blank">Polish ALL the Things</a> to start building your dream collection today.
+                    </p>
+                </div>
+
+                <!-- Image -->
+                <div>
+                    <img src="/app.png" alt="App Preview" class="rounded-lg shadow-lg w-auto h-auto">
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div id="pressons" class="text-white p-8">
         <div class="max-w-screen-xl mx-auto">
             <h2 class="text-4xl font-bold font-heading mb-6 text-center">Press-On Nails</h2>
@@ -130,7 +164,7 @@
                 <!-- Text Content -->
                 <div>
                     <p class="text-lg leading-relaxed">
-                        Finding your perfect nail fit has never been easier! With a press-on nail sizing kit, you can quickly match each finger to its ideal size - no guessing, no stress. The kit lets you test different sizes in your preferred shape so your press-ons feel comfortable and look flawlessly natural. And with Apres Gel-X’s half-sizes, you get an even more precise fit for every nail, ensuring a smooth, seamless look from thumb to pinky. It’s the simple, foolproof way to get salon-perfect nails that feel custom-made just for you!  Please use this easy <a style="color:gray" hover="purple" href="https://sites.google.com/view/polishallthethings/press-on-guide">Press-On Guide</a> to determine what shapes we have available.
+                        Finding your perfect nail fit has never been easier! With a press-on nail sizing kit, you can quickly match each finger to its ideal size - no guessing, no stress. The kit lets you test different sizes in your preferred shape so your press-ons feel comfortable and look flawlessly natural. And with Apres Gel-X’s half-sizes, you get an even more precise fit for every nail, ensuring a smooth, seamless look from thumb to pinky. It’s the simple, foolproof way to get salon-perfect nails that feel custom-made just for you!  Please use this easy <a style="color:gray" hover="purple" href="https://sites.google.com/view/polishallthethings/press-on-guide" target="_blank">Press-On Guide</a> to determine what shapes we have available.
                     </p>
                 </div>
 
@@ -176,7 +210,7 @@
 
                 <!-- Image -->
                 <div>
-                    <img src="/decals.jpeg" alt="Waterslide Decals" class="rounded-lg shadow-lg w-full h-auto">
+                    <img src="/decals.jpg" alt="Waterslide Decals" class="rounded-lg shadow-lg w-full h-auto">
                 </div>
             </div>
         </div>
@@ -214,16 +248,20 @@
 
                     <form action="#" class="space-y-3">
                         <div>
+                            <label for="name" class="block mb-2 text-normal font-medium text-text">Your name</label>
+                            <input type="text" id="name" name="name" class="shadow-sm bg-background border border-secondary text-text text-sm rounded-lg focus:ring-accent focus:border-accent block w-full p-2.5" placeholder="Your name" required>
+                        </div>
+                        <div>
                             <label for="email" class="block mb-2 text-normal font-medium text-text">Your email</label>
-                            <input type="email" id="email" class="shadow-sm bg-background border border-secondary text-text text-sm rounded-lg focus:ring-accent focus:border-accent block w-full p-2.5" placeholder="name@example.com" required>
+                            <input type="email" id="email" name="email" class="shadow-sm bg-background border border-secondary text-text text-sm rounded-lg focus:ring-accent focus:border-accent block w-full p-2.5" placeholder="name@example.com" required>
                         </div>
                         <div>
                             <label for="subject" class="block mb-2 text-normal font-medium text-text">Subject</label>
-                            <input type="text" id="subject" class="block p-3 w-full text-sm text-text bg-background rounded-lg border border-secondary shadow-sm focus:ring-accent focus:border-accent" placeholder="Let us know how we can help you" required>
+                            <input type="text" id="subject" name="title" class="block p-3 w-full text-sm text-text bg-background rounded-lg border border-secondary shadow-sm focus:ring-accent focus:border-accent" placeholder="Let us know how we can help you" required>
                         </div>
                         <div class="sm:col-span-2">
                             <label for="message" class="block mb-2 text-normal font-medium text-text">Your message; please include order number if applicable!</label>
-                            <textarea id="message" rows="6" class="block p-2.5 w-full text-sm text-text bg-background rounded-lg shadow-sm border border-secondary focus:ring-accent focus:border-accent" placeholder="Leave a comment..."></textarea>
+                            <textarea id="message" name="message" rows="6" class="block p-2.5 w-full text-sm text-text bg-background rounded-lg shadow-sm border border-secondary focus:ring-accent focus:border-accent" placeholder="Leave a comment..." required></textarea>
                         </div>
                         <button type="submit" class="py-3 px-5 text-sm font-medium text-center text-background rounded-lg bg-secondary sm:w-fit hover:bg-accent focus:ring-4 focus:outline-none focus:ring-primary mx-auto block">Send message</button>
                     </form>
@@ -310,6 +348,26 @@
     e.preventDefault();
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
+</script>
+
+<!--Got this from Claude for Sticky Menus-->
+
+<script>
+// Handle Contact form submission
+document.querySelector('form').addEventListener('submit', function(event) {
+event.preventDefault(); // Stop the form from submitting normally
+
+// Send the email
+emailjs.sendForm('service_glz4e7h', 'template_ssb1wdd', this)
+.then(function() {
+alert('Message sent successfully!');
+// Clear the form
+event.target.reset();
+}, function(error) {
+alert('Failed to send message. Please try again.');
+console.log('Error:', error);
+});
+});
 </script>
 
 </body>
